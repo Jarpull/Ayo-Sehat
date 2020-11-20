@@ -1,0 +1,165 @@
+<html>
+<head>
+<link href='styleBMI.css' rel='stylesheet'>
+<title>Kalkulator BMI - Ayo Sehat</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="imgBx">
+      <a href="index.html"><img src="images/logo.png"></a>
+  </div>
+    <ul class="navigation">
+        <li><a href="Artikel.html">Artikel</a></li>
+        <li><a href="forum.html">Forum Kesehatan</a></li>
+        <li><a href="buatjanji.html">Buat Janji</a></li>
+        <li><a href="#"><span class="active">Kalkulator BMI</span></a></li>
+    </ul>
+    <a href="#" class="btn" id="login">Masuk</a>
+    <a href="#" class="btn1" id="regis">Daftar</a>
+</header>
+
+<script src="BMI.js"></script>
+<H1>BMI CALCULATOR</H1>
+<div id="scale_main">
+  <div id="scale_display">
+        <h2 id="range" class="neutral">Enter Measurements</h2>
+        <h3 id="bmi" >--.--</h3>
+        <div id="needle">
+        </div>
+        <div id="needle_bottom">
+        </div>
+      </div>
+  
+    <div class="measurement" id="height">
+        <h4>Height</h4>
+        
+        <input class="input" type="text" id="height_input" name="height"            required></input>
+      <span class="unit">CM</span>
+   </div>
+   <div class="measurement" id="weight">
+        <h4>Weight</h4>
+        <input class="input" type="text" id="weight_input" name="weight" required></input>
+        <span class="unit">KG</span>
+   </div>
+ 
+      <div>
+        <button id="calculate" onclick="calculate(document.getElementById('height_input').value, document.getElementById('weight_input').value)">CALCULATE</button>
+        <button id="clear" onclick="clear_calculator()">CLEAR</button>
+  </div>
+  
+  <div class="popup">
+    <div class="login">
+        <div class="imgBx">
+            <img src="images/login.png" alt="">
+            <p>Belum Punya Akun? <a href="#" id="daftar">Daftar</a></p>
+        </div>
+        <div class="form">
+            <h1>Masuk</h1>
+            <div>
+                <i class="fa far fa-user-circle"></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div>
+                <i class="fa fas fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <a href="" class="btn">Login</a>
+        </div>
+        <div class="close">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+    <div class="regist">
+        <div class="imgBx">
+            <img src="images/daftar.png" alt="">
+            <p>Sudah Punya Akun? <a href="#" id="masuk">Masuk</a></p>
+        </div>
+        <div class="form">
+            <h1>Daftar Sekarang</h1>
+            <div>
+                <i class="fa far fa-user-circle"></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div>
+                <i class="fa fas fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <div>
+                <i class="fa fas fa-lock"></i>
+                <input type="password" placeholder="Re-password">
+            </div>
+            <div>
+                <i class="fa far fa-calendar"></i>
+                <input type="text" placeholder="Tanggal Lahir (hr/bln/thn)">
+            </div>
+            <div>
+                <i class="fa fab far fa-envelope"></i>
+                <input type="text" placeholder="Email">
+            </div>
+            <div>
+                <i class="fa fas fa-phone"></i>
+                <input type="text" placeholder="No. Handphone">
+            </div>
+            <a href="" class="btn">Daftar</a>
+        </div>
+        <div class="close">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+</div>
+
+
+ </div>
+ <div class="footer">
+  <div class="colom1">
+        <img src="images/logo.png">
+        <div class="phone">
+            <div class="imgBx">
+                <img src="images/call.png" alt="">
+            </div>
+            <h2>021-7468981</h2>
+        </div>   		
+  </div>
+  <div class="colom2">
+    <h2>Menu</h2>
+    <hr>
+    <ul>
+      <li><a href="Artikel.html">Artikel</a></li>
+      <li><a href="forum.html">Forum Kesehatan</a></li>
+      <li><a href="buatjanji.html">Buat Janji</a></li>
+      <li><a href="#">Kalkulator BMI</a></li>
+    </ul>
+  </div>
+  <div class="colom3">
+    <h2>Kontak Kami</h2>
+        <hr>
+        <div class="email">
+            <div class="imgBx">
+                <img src="images/email 1.png" alt="">
+            </div>
+            <p>ayosehat@gmail.com</p>
+        </div>
+        <div class="sosmed">
+            <div class="imgBx">
+                <img src="images/013-twitter-1.png" alt="">
+            </div>
+            <div class="imgBx">
+                <img src="images/034-instagram.png" alt="">
+            </div>
+            <div class="imgBx">
+                <img src="images/043-facebook-1.png" alt="">
+            </div>
+        </div>
+  </div>
+</div>
+<footer>
+<div class="foot">
+  <small>2020 © Developed by <span>Ayo Sehat</span></small>
+</div>
+</footer>
+
+<script type="text/javascript" src="javascript.js"></script>
+
+  </body>
+</html>

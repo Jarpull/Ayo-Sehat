@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Janji - Ayo Sehat</title>
+    <link rel="stylesheet" href="buatjanji.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="imgBx">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="navigation">
+            <li><a href="Artikel.html">Artikel</a></li>
+            <li><a href="forum.html">Forum Kesehatan</a></li>
+            <li><a href="#"><span class="active">Buat Janji</span></a></li>
+            <li><a href="BMI.html">Kalkulator BMI</a></li>
+        </ul>
+        <a href="#" class="btn" id="login">Masuk</a>
+        <a href="#" class="btn1" id="regis">Daftar</a>
+    </header>
+
+    <section class="janji">
+        <div class="titleText">
+            <h1>Buat Janji</h1>
+        </div>
+        <form>
+            <select class="event-type-select">
+              <option value="all">Pilih Spesialis</option>
+              <option value="umum">Dokter Umum</option>
+              <option value="jantung">Dokter Jantung</option>
+              <option value="dalam">Dokter Penyakit Dalam</option>
+              <option value="anak">Dokter Anak</option>
+            </select>
+        </form>
+
+        <div class="container">
+            <div class="box" data-eventtype="umum">
+                <div class="imgBx">
+                    <img src="images/dokter1.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>dr. Satria Jaya Lukmana</h1>
+                    <div>
+                        <i class="fa fas fa-briefcase-medical"></i>
+                        <p>Dokter Umum</p>     
+                    </div>
+                    <div>
+                        <i class="fa fas fa-map-marker-alt"></i>
+                        <p>Jakarta Selatan</p>
+                    </div>
+                    <div>
+                        <i class="fa far fa-building"></i>
+                        <p>Klinik Pratama Merial Health</p>
+                    </div>
+                </div>
+                <div class="jadwal">
+                    <p>Jadwal Praktik</p>
+                    <p>Senin - Rabu, Jam 10.00 s/d 14.00</p>
+                    <br>
+                    <p>Ulasan Dokter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100% (2)</p>
+                    <p>Biaya Jasa :</p>
+                    <h4>Rp. 75.000</h4>
+                    <a href="#janji" class="btn">Buat Janji</a>
+                </div>  
+            </div>
+            <div class="box" data-eventtype="jantung">
+                <div class="imgBx">
+                    <img src="images/dokter2.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>dr. Odityo Somiaji Sp.JP</h1>
+                    <div>
+                        <i class="fa fas fa-briefcase-medical"></i>
+                        <p>Dokter Jantung</p>     
+                    </div>
+                    <div>
+                        <i class="fa fas fa-map-marker-alt"></i>
+                        <p>Jakarta Timur</p>
+                    </div>
+                    <div>
+                        <i class="fa far fa-building"></i>
+                        <p>Rumah Sakit Pasar Rebo</p>
+                    </div>
+                </div>
+                <div class="jadwal">
+                    <p>Jadwal Praktik</p>
+                    <p>Senin - Rabu, Jam 10.00 s/d 14.00</p>
+                    <br>
+                    <p>Ulasan Dokter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100% (2)</p>
+                    <p>Biaya Jasa :</p>
+                    <h4>Rp. 200.000</h4>
+                    <a href="#janji" class="btn">Buat Janji</a>
+                </div>
+            </div>
+            <div class="box" data-eventtype="dalam">
+                <div class="imgBx">
+                    <img src="images/dokter3.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>dr. Boba Kunaidi Sp.PD</h1>
+                    <div>
+                        <i class="fa fas fa-briefcase-medical"></i>
+                        <p>Dokter Spesialis Penyakit Dalam</p>     
+                    </div>
+                    <div>
+                        <i class="fa fas fa-map-marker-alt"></i>
+                        <p>Jakarta Selatan</p>
+                    </div>
+                    <div>
+                        <i class="fa far fa-building"></i>
+                        <p>Klinik Pratama Merial Health</p>
+                    </div>
+                </div>
+                <div class="jadwal">
+                    <p>Jadwal Praktik</p>
+                    <p>Senin - Rabu, Jam 10.00 s/d 14.00</p>
+                    <br>
+                    <p>Ulasan Dokter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100% (2)</p>
+                    <p>Biaya Jasa :</p>
+                    <h4>Rp. 175.000</h4>
+                    <a href="#janji" class="btn">Buat Janji</a>
+                </div>
+            </div>
+            <div class="box" data-eventtype="anak">
+                <div class="imgBx">
+                    <img src="images/dokter4.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>dr. Abdul Syaifullah Ghoni  Sp.A </h1>
+                    <div>
+                        <i class="fa fas fa-briefcase-medical"></i>
+                        <p>Dokter Anak</p>     
+                    </div>
+                    <div>
+                        <i class="fa fas fa-map-marker-alt"></i>
+                        <p>Jakarta Timur</p>
+                    </div>
+                    <div>
+                        <i class="fa far fa-building"></i>
+                        <p>Rumah Sakit Pasar Rebo</p>
+                    </div>
+                </div>
+                <div class="jadwal">
+                    <p>Jadwal Praktik</p>
+                    <p>Senin - Jumat, Jam 10.00 s/d 14.00</p>
+                    <br>
+                    <p>Ulasan Dokter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100% (2)</p>
+                    <p>Biaya Jasa :</p>
+                    <h4>Rp. 69.000</h4>
+                    <a href="#janji" class="btn">Buat Janji</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="popup">
+        <div class="login">
+            <div class="imgBx">
+                <img src="images/login.png" alt="">
+                <p>Belum Punya Akun? <a href="#" id="daftar">Daftar</a></p>
+            </div>
+            <div class="form">
+                <h1>Masuk</h1>
+                <div>
+                    <i class="fa far fa-user-circle"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div>
+                    <i class="fa fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <a href="" class="btn">Login</a>
+            </div>
+            <div class="close">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+        <div class="regist">
+            <div class="imgBx">
+                <img src="images/daftar.png" alt="">
+                <p>Sudah Punya Akun? <a href="#" id="masuk">Masuk</a></p>
+            </div>
+            <div class="form">
+                <h1>Daftar Sekarang</h1>
+                <div>
+                    <i class="fa far fa-user-circle"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div>
+                    <i class="fa fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div>
+                    <i class="fa fas fa-lock"></i>
+                    <input type="password" placeholder="Re-password">
+                </div>
+                <div>
+                    <i class="fa far fa-calendar"></i>
+                    <input type="text" placeholder="Tanggal Lahir (hr/bln/thn)">
+                </div>
+                <div>
+                    <i class="fa fab far fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div>
+                    <i class="fa fas fa-phone"></i>
+                    <input type="text" placeholder="No. Handphone">
+                </div>
+                <a href="" class="btn">Daftar</a>
+            </div>
+            <div class="close">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+    	<div class="colom1">
+            <img src="images/logo.png">
+            <div class="phone">
+                <div class="imgBx">
+                    <img src="images/call.png" alt="">
+                </div>
+                <h2>021-7468981</h2>
+            </div>   		
+    	</div>
+    	<div class="colom2">
+    		<h2>Menu</h2>
+    		<hr>
+    		<ul>
+    			<li><a href="Artikel.html">Artikel</a></li>
+    			<li><a href="forum.html">Forum Kesehatan</a></li>
+    			<li><a href="#">Buat Janji</a></li>
+    			<li><a href="BMI.html">Kalkulator BMI</a></li>
+    		</ul>
+    	</div>
+    	<div class="colom3">
+    		<h2>Kontak Kami</h2>
+            <hr>
+            <div class="email">
+                <div class="imgBx">
+                    <img src="images/email 1.png" alt="">
+                </div>
+                <p>ayosehat@gmail.com</p>
+            </div>
+            <div class="sosmed">
+                <div class="imgBx">
+                    <img src="images/013-twitter-1.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="images/034-instagram.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="images/043-facebook-1.png" alt="">
+                </div>
+            </div>
+    	</div>
+    </div>
+    <footer>
+		<div class="foot">
+			<small>2020 © Developed by <span>Ayo Sehat</span></small>
+		</div>
+    </footer>
+    
+    <script>
+        $(".event-type-select").change(function() {
+            var selectedEventType = this.options[this.selectedIndex].value;
+            if (selectedEventType == "all") {
+                $('.box').show();
+            } else {
+                $('.box').hide();
+                $('.box[data-eventtype="'+selectedEventType+'"]').show();
+            } 
+        });
+    </script>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
