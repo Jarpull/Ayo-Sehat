@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Sehat - Info Kesehatan, Booking dan Tanya Dokter</title>
+    <link rel="stylesheet" href="stylejanji.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#forumKesehatan">Forum Kesehatan</a></li>
+            <li><a href="#janjitemu"><span class="active">Janji Temu</span></a></li>
+            <li><a href="#kalkulatorBmi">Kalkulator BMI</a></li>
+        </ul>
+    </header>
+
+    <section class="artikel" id="artikel">
+        <div class="title">
+            <h2 class="titleText">Daftar Janji Temu</h2>
+        </div>
+        <div class="content">
+            <div class="notif"><p>(4) Permintaan</p></div>
+            <div class="box">
+                <div class="imgBx">
+                    <div class="avatar-circle">
+                        <span class="initials">G</span>
+                    </div>
+                </div>
+                <div class="text">
+                    <h1>Ghifara Ahmad Lutfi</h1>
+                    <i class="far fa-calendar"></i>
+                    <p>Senin, 9 November 2020</p>
+                    <i class="far fa-clock"></i>
+                    <p>10:30 WIB</p><br>
+                    <i class="fas fa-comment-alt"><p>[ Keluhan ]</p></i>
+                </div>
+                <div class="tombol">
+                    <input type="button" class="button1" value="Terima">
+                    <input type="button" class="button2" value="Batalkan">
+                </div>        
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <div class="avatar-circle">
+                        <span class="initials">H</span>
+                    </div>
+                </div>
+                <div class="text">
+                    <h1>Herry Yanto</h1>
+                    <i class="far fa-calendar"></i>
+                    <p>Rabu, 11 November 2020</p>
+                    <i class="far fa-clock"></i>
+                    <p>13:30 WIB</p><br>
+                    <i class="fas fa-comment-alt"><p>[ Keluhan ]</p></i>
+                </div>
+                <div class="tombol">
+                    <input type="button" class="button1" value="Terima">
+                    <input type="button" class="button2" value="Batalkan">
+                </div>         
+            </div>
+           <div class="box">
+                <div class="imgBx">
+                    <div class="avatar-circle">
+                        <span class="initials">A</span>
+                    </div>
+                </div>
+                <div class="text">
+                    <h1>Abeat G</h1>
+                    <i class="far fa-calendar"></i>
+                    <p>Kamis, 12 November 2020</p>
+                    <i class="far fa-clock"></i>
+                    <p>09:30 WIB</p><br>
+                    <i class="fas fa-comment-alt"><p>[ Keluhan ]</p></i>
+                </div>
+                <div class="tombol">
+                    <input type="button" class="button1" value="Terima">
+                    <input type="button" class="button2" value="Batalkan">
+                </div>   
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <div class="avatar-circle">
+                        <span class="initials">P</span>
+                    </div>
+                </div>
+                <div class="text">
+                    <h1>Pachran Sanduy</h1>
+                    <i class="far fa-calendar"></i>
+                    <p>Senin, 16 November 2020</p>
+                    <i class="far fa-clock"></i>
+                    <p>09:30 WIB</p><br>
+                    <i class="fas fa-comment-alt"><p>[ Keluhan ]</p></i>
+                </div>
+                <div class="tombol">
+                    <input type="button" class="button1" value="Terima">
+                    <input type="button" class="button2" value="Batalkan">
+                </div>   
+            </div>
+    </section>
+    
+    <div class="footer">
+    	<div class="colom1">
+            <img src="images/logo.png">
+            <div class="phone">
+                <div class="imgBx">
+                    <img src="images/call.png" alt="">
+                </div>
+                <h2>021-7468981</h2>
+            </div>   		
+    	</div>
+    	<div class="colom2">
+    		<h2>Menu</h2>
+    		<hr>
+    		<ul>
+    			<li><a href="#artikel">Artikel</a></li>
+    			<li><a href="#forumKesehatan">Forum Kesehatan</a></li>
+    			<li><a href="#buatJanji">Buat Janji</a></li>
+    			<li><a href="#kalkulatorBMI">Kalkulator BMI</a></li>
+    		</ul>
+    	</div>
+    	<div class="colom3">
+    		<h2>Kontak Kami</h2>
+    		<hr>
+    		<p>ayosehat@gmail.com</p>
+    	</div>
+    </div>
+    <footer>
+		<div class="foot">
+			<small>2020 © Developed by <span>Ayo Sehat</span></small>
+		</div>
+	</footer>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);    
+        });
+    </script>
+
+</body>
+</html>
