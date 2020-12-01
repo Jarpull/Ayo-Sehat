@@ -108,13 +108,13 @@ header li {
 
 header li a {
     text-decoration: none;
-    color: #818181;
+    color: #363636;
     font-weight: 450;
     font-size: 1.2em;
 }
 
 header.sticky .navigation li a {
-    color: #818181;
+    color: #363636;
 }
 
 header li a:hover {
@@ -374,10 +374,11 @@ section {
 
 .regist .form h1 {
     margin: 30px 0px 0px 0px;
+    font-size: 25px;
 }
 
 .regist .form div {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .regist .form i {
