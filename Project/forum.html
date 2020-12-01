@@ -6,27 +6,38 @@
     <title>Forum Kesehatan - Ayo Sehat</title>
     <link rel="stylesheet" href="forum.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <div class="imgBx">
-            <a href="index.html"><img src="images/logo.png"></a>
-        </div>
-        <ul class="navigation">
-            <li><a href="Artikel.html">Artikel</a></li>
-            <li><a href="#"><span class="active">Forum Kesehatan</span></a></li>
-            <li><a href="buatjanji.html">Buat Janji</a></li>
-            <li><a href="BMI.html">Kalkulator BMI</a></li>
-        </ul>
-        <a href="#" class="btn" id="login">Masuk</a>
-        <a href="#" class="btn1" id="regis">Daftar</a>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                    <a class="nav-link" href="Artikel.html">Artikel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forum.html"><span class="active">Forum Kesehatan</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buatjanji.html">Buat Janji</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BMI.html">Kalkulator BMI</a>
+                </li>
+                <li><a href="#" class="tom" id="login">Masuk</a></li>
+                <li><a href="#" class="tom2" id="regis">Daftar</a></li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
     <section class="forum">
         <div class="titleText">
             <h1>Forum Kesehatan</h1>
         </div>
-        <a href="#" class="btn">Tanya Dokter</a>
+        <a href="#" class="tom">Tanya Dokter</a>
         <div class="wrap">
             <div class="search">
                <input type="text" class="searchTerm" placeholder="Search...">
@@ -261,5 +272,6 @@
 	</footer>
 
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
