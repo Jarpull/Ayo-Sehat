@@ -142,8 +142,11 @@ section {
     margin: 50px 15px;
     width: 250px;
     text-align: center;
+    text-decoration: none;
 }
-
+.forum .tom:hover{
+    color: white;
+}
 .search {
     width: 100%;
     position: relative;
