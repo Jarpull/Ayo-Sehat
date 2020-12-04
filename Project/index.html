@@ -6,45 +6,53 @@
     <title>Ayo Sehat - Info Kesehatan, Booking dan Tanya Dokter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png">
-        <ul class="navigation">
-            <li><a href="Artikel.html">Artikel</a></li>
-            <li><a href="forum.html">Forum Kesehatan</a></li>
-            <li><a href="buatjanji.html">Buat Janji</a></li>
-            <li><a href="BMI.html">Kalkulator BMI</a></li>
-        </ul>
-        <a href="#" class="btn" id="login">Masuk</a>
-        <a href="#daftar" class="btn1" id="regis">Daftar</a>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                    <a class="nav-link" href="Artikel.html">Artikel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forum.html">Forum Kesehatan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buatjanji.html">Buat Janji</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BMI.html">Kalkulator BMI</a>
+                </li>
+                <li><a href="#" class="tom" id="login">Masuk</a></li>
+                <li><a href="#" class="tom2" id="regis">Daftar</a></li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
     <section class="banner">
         <div class="content">
             <h2>Solusi Kesehatan Terbaik Di Indonesia</h2>
             <p>Konsultasi dokter dan update informasi seputar kesehatan, semua bisa di Ayo Sehat</p>
-            <a href="buatjanji.html" class="btn">Cari Dokter</a>
+            <a href="buatjanji.html" class="tom">Cari Dokter</a>
         </div>
     </section>
 
     <section class="about">
-        <div class="row">
-            <div class="col50">
-                <h2 class="titleText">Tentang Kami</h2>
-                <p>Ayo Sehat merupakan aplikasi berbasis web kesehatan digital yang dibuat pada tahun 2020. 
-                    Semakin berkembangnya teknologi dalam digital, maka dari bidang kesehatan juga harus ikut 
-                    menyesuaikan dengan perkembangan tersebut. Pada aplikasi ini menyediakan layanan kesehatan 
-                    yang dapat diakses oleh siapa saja dan juga terdapat informasi-informasi terkait kesehatan.
-                </p>
-                <hr>
-            </div>
-            <div class="col50">
-                <div class="imgBx">
-                    <img src="images/about1.png">
-                </div>
-            </div>
+        <div class="media">
+          <div class="media-body">
+            <h2 class="mt-0 mb-1">Tentang Kami</h2>
+            <p>Ayo Sehat merupakan aplikasi berbasis web kesehatan digital yang dibuat pada tahun 2020. 
+            Semakin berkembangnya teknologi dalam digital, maka dari bidang kesehatan juga harus ikut 
+            menyesuaikan dengan perkembangan tersebut. Pada aplikasi ini menyediakan layanan kesehatan 
+            yang dapat diakses oleh siapa saja dan juga terdapat informasi-informasi terkait kesehatan.</p>
+            <hr>
+          </div>
+          <img src="images/about1.png" class="ml-3" alt="...">
         </div>
     </section>
 
@@ -58,36 +66,6 @@
                     <a href="Artikel2.html"><img src="images/artikel1.jpg"></a>
                 </div>
                 <div class="text">
-                    <h3>Ketahui 5 Manfaat Minum Susu di Pagi Hari</h3>
-                </div>
-                <div class="deskripsi">
-                    <p>Minum susu kerap menjadi salah satu solusi bagi orang yang sering kali melewatkan sarapan. 
-                        Tak hanya rasanya yang nikmat, manfaat minum...</p>
-                </div>
-                <div class="link">
-                    <a href="Artikel2.html">Baca Selengkapnya</a>
-                </div>       
-            </div>
-            <div class="box">
-                <div class="imgBx">
-                   <a href="Artikel2.html"><img src="images/artikel2.jpg"></a>
-                </div>
-                <div class="text">
-                    <h3>Intip Manfaat Buah Tin untuk Kesehatan</h3>
-                </div>
-                <div class="deskripsi">
-                    <p>Di balik rasanya yang manis serta tampilan dan teksturnya yang unik, ada banyak manfaat buah 
-                        tin yang bisa kita dapatkan. Berbagai kandungan...</p>
-                </div>
-                <div class="link">
-                    <a href="Artikel2.html">Baca Selengkapnya</a>
-                </div>                
-            </div>
-            <div class="box">
-                <div class="imgBx">
-                    <a href="Artikel2.html"><img src="images/artikel3.jpg"></a>
-                </div>
-                <div class="text">
                     <h3>Berbagai Jenis Obat Asam Lambung dan Penanganannya di Rumah</h3>
                 </div>
                 <div class="deskripsi">
@@ -97,9 +75,39 @@
                 <div class="link">
                     <a href="Artikel2.html">Baca Selengkapnya</a>
                 </div>       
-        </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                   <a href="Artikel3.html"><img src="images/artikel2.jpg"></a>
+                </div>
+                <div class="text">
+                    <h3>Intip Manfaat Buah Tin untuk Kesehatan</h3>
+                </div>
+                <div class="deskripsi">
+                    <p>Di balik rasanya yang manis serta tampilan dan teksturnya yang unik, ada banyak manfaat buah 
+                        tin yang bisa kita dapatkan. Berbagai kandungan...</p>
+                </div>
+                <div class="link">
+                    <a href="Artikel3.html">Baca Selengkapnya</a>
+                </div>                
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <a href="Artikel4.html"><img src="images/artikel3.jpg"></a>
+                </div>
+                <div class="text">
+                    <h3>Ketahui 5 Manfaat Minum Susu di Pagi Hari</h3>
+                </div>
+                <div class="deskripsi">
+                    <p>Minum susu kerap menjadi salah satu solusi bagi orang yang sering kali melewatkan sarapan. 
+                        Tak hanya rasanya yang nikmat, manfaat minum...</p>
+                </div>
+                <div class="link">
+                    <a href="Artikel4.html">Baca Selengkapnya</a>
+                </div>       
+            </div>
         <div class="title">
-           <a href="Artikel.html" class="btn">Artikel Lainnya</a>
+           <a href="Artikel.html" class="tom">Artikel Lainnya</a>
         </div>
     </section>
 
@@ -156,7 +164,7 @@
                     <i class="fa fas fa-phone"></i>
                     <input type="text" placeholder="No. Handphone">
                 </div>
-                <a href="" class="btn">Daftar</a>
+                <a href="" class="tom">Daftar</a>
             </div>
             <div class="close">
                 <i class="fa fa-close"></i>
@@ -212,5 +220,6 @@
 		</div>
     </footer>
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
