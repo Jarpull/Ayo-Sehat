@@ -1,4 +1,7 @@
-<?php require_once("auth.php"); ?>
+<?php
+include('register.php');
+include('login.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +11,7 @@
     <title>Ayo Sehat - Info Kesehatan, Booking dan Tanya Dokter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 
@@ -29,19 +33,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="BMI.html">Kalkulator BMI</a>
                 </li>
-                <li class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    <h6><?php echo $_SESSION["user"]["name"] ?></h6>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a class="dropdown-item" href="logout.php">Logout</a></li></li>
-                    </ul> 
-                </li>
+                <li><a href="#" class="tom" id="login">Masuk</a></li>
+                <li><a href="#" class="tom2" id="regis">Daftar</a></li>
             </ul>
           </div>
         </nav>
     </header>
-    
+
     <section class="banner">
         <div class="content">
             <h2>Solusi Kesehatan Terbaik Di Indonesia</h2>
@@ -125,9 +123,9 @@
                 <img src="images/login.png" alt="">
                 <p>Belum Punya Akun? <a href="#" id="daftar">Daftar</a></p>
             </div>
-
-            <form action="" method="POST">
-            <div class="form">
+                <!-- login form -->
+                <form action="" method="POST">
+                <div class="form">
                 <h1>Masuk</h1>
                 <div>
                     <i class="fa far fa-user-circle"></i>
@@ -135,17 +133,17 @@
                 </div>
                 <div>
                     <i class="fa fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password"  name="password" placeholder="Password">
                 </div>
-                <input type="submit" class="btn btn-success btn-block" name="login"
-                value="Login"/>
+                <button type="submit" class="btn btn-success btn-md" name="login" value="Login">Masuk</button>
             </div>
-            </form>
+                </form>
+        
             <div class="close">
                 <i class="fa fa-close"></i>
             </div>
         </div>
-
+        
         <div class="regist">
             <div class="imgBx">
                 <img src="images/daftar.png" alt="">
@@ -165,7 +163,7 @@
                 </div>
                 <div>
                     <i class="fa far fa-calendar"></i>
-                    <input type="text" name="tanggallahir" placeholder="Tanggal Lahir">
+                    <input type="date" name="tanggallahir" placeholder="Tanggal Lahir">
                 </div>
                 <div>
                     <i class="fa fab far fa-envelope"></i>
@@ -233,7 +231,7 @@
 		</div>
     </footer>
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
