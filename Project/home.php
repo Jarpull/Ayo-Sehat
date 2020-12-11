@@ -30,8 +30,8 @@
                     <a class="nav-link" href="BMI.html">Kalkulator BMI</a>
                 </li>
                 <li class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    <h6><?php echo $_SESSION["user"]["name"] ?></h6>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <?php echo $_SESSION["user"]["name"] ?>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li><a class="dropdown-item" href="logout.php">Logout</a></li></li>
