@@ -13,7 +13,33 @@ p {
     color: #111;
 }
 
-.btn {
+.banner {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    position: relative;
+    left: 600px;
+    max-width: 900px;
+}
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.tom {
     font-size: 1.1em;
     font-weight: 600;
     color: #fff;
@@ -21,14 +47,13 @@ p {
     border-radius: 3px;
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
     transition: 0.5s;
 }
 
-.btn1 {
+.tom2 {
     font-size: 1.1em;
     font-weight: 600;
     color: #79D263;
@@ -37,7 +62,6 @@ p {
     border: 3px solid #79D263;
     display: inline-block;
     padding: 7px 17px;
-    margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
@@ -53,6 +77,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 25%;
     padding: 10px 70px;
     z-index: 10000;
     display: flex;
@@ -66,53 +91,38 @@ header.sticky {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-header .imgBx {
-    position: relative;
-    width: 105px;
-    height: 95px;
-    left: 10px;
+header a {
+    width: auto;
+    height: auto;
+    position: left, fixed;
 }
 
-header .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+header ul li{
+    display: inline-block;
 }
 
-header .navigation {
-    position: relative;
-    display: flex;
-    left: 470px;
-}
-
-header .navigation li {
+header li {
     list-style: none;
     margin-left: 30px;
 }
 
-header .navigation li a {
+header li a {
     text-decoration: none;
-    color: #111;
+    color: #363636;
     font-weight: 450;
     font-size: 1.2em;
 }
 
 header.sticky .navigation li a {
-    color: #111;
+    color: #363636;
 }
 
-header .navigation li a:hover {
+header li a:hover {
     color: #79D263;
+    text-decoration: none;
 }
-
-header .btn,
-.btn1 {
-    position: relative;
-    left: 520px;
-    margin: 10px;
+header li .tom:hover {
+    color: white;
 }
 
 .active {
@@ -205,11 +215,18 @@ section {
     line-height: 25px;
     font-weight: 400;
 }
-
+.artikel .content2 .text ol {
+    padding: 10px 40px;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-weight: 400;
+}
 .artikel .content2 .text ul li {
     padding: 2px 0px;
 }
-
+.artikel .content2 .text ol li {
+    padding: 2px 0px;
+}
 
 .artikel .content .box .link {
     padding: 10px 0;
@@ -363,10 +380,11 @@ section {
 
 .regist .form h1 {
     margin: 30px 0px 0px 0px;
+    font-size: 25px;
 }
 
 .regist .form div {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .regist .form i {
@@ -448,6 +466,11 @@ h2 {
     list-style: none;
 }
 
+.footer .colom2 a:hover{
+    text-decoration: none;
+    color: #6DE559;
+}
+
 .footer .colom3 .email {
     position: relative;
     display: flex;
@@ -486,7 +509,7 @@ h2 {
 }
 
 
-.foot hr {
+.footer hr {
     border: 0.5px solid #fff;
 }
 
