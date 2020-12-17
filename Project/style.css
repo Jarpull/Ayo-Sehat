@@ -22,26 +22,27 @@ p {
     background-size: cover;
 }
 
-.banner .content {
+.banner .media {
     position: relative;
-    left: 550px;
+    left: 30%;
     max-width: 900px;
 }
 
-.banner .content h2 {
+.banner .media h2 {
     color: #fff;
     font-size: 35px;
 }
 
-.banner .content p {
+.banner .media p {
     font-size: 1.2em;
     font-weight: 400;
     color: #fff;
 }
 
-.banner .content .tom{
+.banner .media .tom{
     text-decoration: none;
     color: white;
+    margin-left: 13%;
 }
 
 .tom {
@@ -73,8 +74,8 @@ p {
     transition: 0.5s;
 }
 
-.btn:hover {
-    filter: brightness(110%);
+.form button {
+    margin-top: 50px;
 }
 
 header {
@@ -134,6 +135,19 @@ header li a:hover {
 header li .tom:hover {
     color: white;
 }
+header .dropdown button{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+header.sticky li button {
+    color: #363636;
+}
+
+header .dropdown button:hover{
+    color: #79D263;
+}
 
 .about {
     background-color: #79D263;
@@ -174,6 +188,7 @@ header li .tom:hover {
     width: 37%;
     padding-right: 150px;
     padding-left: 30px;
+    padding-top: 2%;
 }
 .titleText {
     color: #fff;
@@ -298,7 +313,7 @@ header li .tom:hover {
     height: 75%;
     background-color: #FFFFFF;
     border-radius: 15px;
-    display: none;
+    
 }
 
 .login .imgBx {
@@ -352,11 +367,10 @@ header li .tom:hover {
     border-bottom: 2px solid black;
 }
 
-.login .form .btn {
-    position: relative;
-    margin-top: 70px;
-
+.login .test {
+    padding-top: 100px;
 }
+
 
 .login .close {
     position: absolute;
@@ -408,7 +422,7 @@ header li .tom:hover {
 }
 
 .regist .form div {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .regist .form i {
@@ -426,9 +440,6 @@ header li .tom:hover {
     border-bottom: 2px solid black;
 }
 
-.regist .form .btn {
-    margin-top: 40px;
-}
 
 .regist .close {
     position: absolute;
@@ -548,3 +559,117 @@ h2 {
 .foot span {
     color: #6DE559;
 }
+
+.login-content{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+    width: 150px;
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+    margin-top: 0;
+    width: 100%;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #38d39f;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #38d39f;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+

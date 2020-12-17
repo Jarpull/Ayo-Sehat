@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayo Sehat - Info Kesehatan, Booking dan Tanya Dokter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+          <a class="navbar-brand" href="home.php"><img src="images/logo.png"></a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
@@ -30,7 +30,8 @@
                     <a class="nav-link" href="BMI.html">Kalkulator BMI</a>
                 </li>
                 <li class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
                     <?php echo $_SESSION["user"]["name"] ?>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -43,11 +44,15 @@
     </header>
     
     <section class="banner">
-        <div class="content">
-            <h2>Solusi Kesehatan Terbaik Di Indonesia</h2>
+        <section class="banner">
+        <div class="media">
+          <div class="media-body">
+            <h2 class="mt-0">Solusi Kesehatan Terbaik Di Indonesia</h2>
             <p>Konsultasi dokter dan update informasi seputar kesehatan, semua bisa di Ayo Sehat</p>
             <a href="buatjanji.html" class="tom">Cari Dokter</a>
+          </div>
         </div>
+    </section>
     </section>
 
     <section class="about">
@@ -118,72 +123,6 @@
            <a href="Artikel.html" class="tom">Artikel Lainnya</a>
         </div>
     </section>
-
-    <div class="popup">
-        <div class="login">
-            <div class="imgBx">
-                <img src="images/login.png" alt="">
-                <p>Belum Punya Akun? <a href="#" id="daftar">Daftar</a></p>
-            </div>
-
-            <form action="" method="POST">
-            <div class="form">
-                <h1>Masuk</h1>
-                <div>
-                    <i class="fa far fa-user-circle"></i>
-                    <input type="text" name="email" placeholder="Username">
-                </div>
-                <div>
-                    <i class="fa fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Password">
-                </div>
-                <input type="submit" class="btn btn-success btn-block" name="login"
-                value="Login"/>
-            </div>
-            </form>
-            <div class="close">
-                <i class="fa fa-close"></i>
-            </div>
-        </div>
-
-        <div class="regist">
-            <div class="imgBx">
-                <img src="images/daftar.png" alt="">
-                <p>Sudah Punya Akun? <a href="#" id="masuk">Masuk</a></p>
-            </div>
-
-            <form action="" method="POST">
-            <div class="form">
-                <h1>Daftar Sekarang</h1>
-                <div>
-                    <i class="fa far fa-user-circle"></i>
-                    <input type="text" name="name" placeholder="Username">
-                </div>
-                <div>
-                    <i class="fa fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Password">
-                </div>
-                <div>
-                    <i class="fa far fa-calendar"></i>
-                    <input type="text" name="tanggallahir" placeholder="Tanggal Lahir">
-                </div>
-                <div>
-                    <i class="fa fab far fa-envelope"></i>
-                    <input type="text" name="email" placeholder="Email">
-                </div>
-                <div>
-                    <i class="fa fas fa-phone"></i>
-                    <input type="text" name="jenis_kelamin" placeholder="Jenis Kelamin">
-                </div>
-                <input type="submit" class="btn btn-success btn-block" name="register"
-                value="Daftar"/>
-            </div>
-            </form>
-            <div class="close">
-                <i class="fa fa-close"></i>
-            </div>
-        </div>
-    </div>
     
     <div class="footer">
     	<div class="colom1">

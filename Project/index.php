@@ -10,7 +10,7 @@ include('login.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayo Sehat - Info Kesehatan, Booking dan Tanya Dokter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -18,7 +18,7 @@ include('login.php');
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+          <a class="navbar-brand" href="index.php"><img src="images/logo.png"></a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
@@ -41,10 +41,12 @@ include('login.php');
     </header>
 
     <section class="banner">
-        <div class="content">
-            <h2>Solusi Kesehatan Terbaik Di Indonesia</h2>
+        <div class="media">
+          <div class="media-body">
+            <h2 class="mt-0">Solusi Kesehatan Terbaik Di Indonesia</h2>
             <p>Konsultasi dokter dan update informasi seputar kesehatan, semua bisa di Ayo Sehat</p>
             <a href="buatjanji.html" class="tom">Cari Dokter</a>
+          </div>
         </div>
     </section>
 
@@ -173,8 +175,7 @@ include('login.php');
                     <i class="fa fas fa-phone"></i>
                     <input type="text" name="jenis_kelamin" placeholder="Jenis Kelamin">
                 </div>
-                <input type="submit" class="btn btn-success btn-block" name="register"
-                value="Daftar"/>
+                <button type="submit" class="btn btn-success btn-md" name="register" value="regist">Daftar</button>
             </div>
             </form>
             <div class="close">
